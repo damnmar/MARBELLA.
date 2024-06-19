@@ -1,0 +1,53 @@
+<html>
+<head>	
+<title>
+MULTIMEDIA</title>
+<style>
+#fechahoy{font-size:1.2em;color:green;margin:12px;}
+</style>
+</head>
+<body>
+	<div id="fechahoy"></div>		
+<script>
+var d=new Date();var month=new Array(12);month[0]='Enero';month[1]='Febrero';month[2]='Marzo';month[3]='Abril';month[4]='Mayo';month[5]='Junio';month[6]='Julio';month[7]='Agosto';month[8]='Septiembre';month[9]='Octubre';month[10]='Noviembre';month[11]='Diciembre';var todaysDate=+d.getDate()+' de '+month[d.getUTCMonth()]+' del '+d.getUTCFullYear();
+document.getElementById('fechahoy').innerHTML='Hoy es: '+todaysDate;
+</script>
+
+
+	<p>
+	<p>
+		<center>
+<img src="animacion/BANNER2.gif">
+<p>
+				AUDIO
+<br>
+<audio src="audio/reiknoviembre.mp3" controls="controls" type="audio/mpeg" preload="preload">
+</audio>
+<P>
+	VIDEO
+<br>
+<video  controls src="video/bachilleres.mp4" 
+width="400" height="200">
+</video>
+</center>
+<div id="vinc"><a href="http://tu-sitio.com" 
+onmouseover="javascript: void(document.getElementById('vinc').style.fontSize='3em')" 
+onmouseout="javascript: void(document.getElementById('vinc').style.fontSize='1em')">
+Vínculo</a></div><p>
+<a href="javascript:if (confirm('Quieres entrar a NorfiPC?')) 
+{parent.location='http://norfipc.com/index.html';};">Vínculo</a>
+
+		
+<script>
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='50px';}
+</script>
+<div id="blink">texto parpadea</div>
+</div>
+</body>
+</html>
