@@ -1,0 +1,70 @@
+/* nuevo-estilo.css */
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+}
+
+h2 {
+    color: #555;
+    text-transform: uppercase;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Estilos para el formulario */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
