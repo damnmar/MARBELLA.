@@ -1,13 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Fondo blanco */
-    color: #333333; /* Texto negro */
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 header {
-    background-color: #4B0082; /* Vino */
+    background-color: #800000; /* Vino */
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -48,7 +48,7 @@ main {
 }
 
 main h2 {
-    color: #4B0082; /* Vino */
+    color: #800000; /* Vino */
 }
 
 footer {
@@ -56,7 +56,4 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
