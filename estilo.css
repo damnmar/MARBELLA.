@@ -1,59 +1,107 @@
+/* estilo.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4c3; /* Color verde claro */
+    color: #333; /* Color del texto */
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333333;
 }
 
 header {
-    background-color: #800000; /* Vino */
-    color: #ffffff;
+    background-color: #8bc34a; /* Verde pistache */
+    color: white;
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+    background-color: #558b2f; /* Verde más oscuro */
     margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333333; /* Negro */
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    display: block;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #FFD700; /* Dorado */
-    color: #333333; /* Negro */
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
 }
 
-main h2 {
-    color: #800000; /* Vino */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #33691e; /* Verde oscuro */
 }
 
 footer {
-    background-color: #333333; /* Negro */
-    color: #ffffff;
+    background-color: #8bc34a; /* Verde pistache */
+    color: white;
     text-align: center;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    background-color: #e6ee9c; /* Verde muy claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label, form textarea, form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #33691e; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #558b2f; /* Verde más oscuro */
+}
+
+.agradecimientos-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.agradecimientos-imagenes img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #33691e; /* Verde oscuro */
+}
+
+.agradecimientos-texto {
+    margin-top: 20px;
+    text-align: center;
 }
