@@ -41,13 +41,25 @@
         </section>
         <section id="contacto">
             <h2>CONTÁCTANOS</h2>
-            <p><a href="https://www.instagram.com/damnmaar?igshid=NXd1aWNrNno2Z2Fn">Instagram</a></p>
-            <p><a href="https://www.tiktok.com/@damnmaar?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7374960696700241413">TikTok</a></p>
+            <p><a href="https://www.instagram.com/damnmaar?igshid=NXd1aWNrNno2Z2Fn" target="_blank">Instagram</a></p>
+            <p><a href="https://www.tiktok.com/@damnmaar?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7374960696700241413" target="_blank">TikTok</a></p>
             <p>Gmail: <a href="mailto:mariellerivera298@gmail.com">mariellerivera298@gmail.com</a></p>
         </section>
         <section id="formulario">
             <h2>FORMULARIO</h2>
-            <form>
+            <form action="tu_script_para_procesar_el_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+                
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" required><br><br>
+                
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                
                 <p>1. ¿Qué aspecto del cine le resulta más atractivo?</p>
                 <input type="radio" id="narrativa" name="aspecto" value="A">
                 <label for="narrativa">A. La narrativa y los guiones.</label><br>
@@ -56,9 +68,9 @@
                 <input type="radio" id="musica" name="aspecto" value="C">
                 <label for="musica">C. La música y las bandas sonoras.</label><br>
                 <input type="radio" id="actuacion" name="aspecto" value="D">
-                <label for="actuacion">D. La actuación y el desarrollo de personajes.</label><br>
+                <label for="actuacion">D. La actuación y el desarrollo de personajes.</label><br><br>
                 
-                <p>2. ¿Cuánto está dispuesto a invertir en experiencias cinematográficas únicas (como premieres, eventos especiales, etc.)?</p>
+                <p>2. ¿Cuánto está dispuesto a invertir en experiencias cinematográficas únicas?</p>
                 <input type="radio" id="menos50" name="invertir" value="A">
                 <label for="menos50">A. Menos de $50.</label><br>
                 <input type="radio" id="50-100" name="invertir" value="B">
@@ -66,7 +78,7 @@
                 <input type="radio" id="100-500" name="invertir" value="C">
                 <label for="100-500">C. Entre $100 y $500.</label><br>
                 <input type="radio" id="mas1000" name="invertir" value="D">
-                <label for="mas1000">D. Más de $1000.</label><br>
+                <label for="mas1000">D. Más de $1000.</label><br><br>
                 
                 <p>3. ¿Está interesado en recibir información sobre estrenos y eventos de Marbella Films?</p>
                 <input type="radio" id="correo" name="informacion" value="A">
@@ -76,41 +88,27 @@
                 <input type="radio" id="redes" name="informacion" value="C">
                 <label for="redes">C. Sí, por redes sociales.</label><br>
                 <input type="radio" id="no" name="informacion" value="D">
-                <label for="no">D. No, gracias.</label><br>
+                <label for="no">D.
+                                <label for="no">D. No, gracias.</label><br><br>
+                                <label    for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
                 
-                <p>4. ¿Estaría interesado en recibir formación o talleres de cine impartidos por Marbella Films?</p>
-                <input type="radio" id="actuacion" name="taller" value="A">
-                <label for="actuacion">A. Sí, en actuación.</label><br>
-                <input type="radio" id="produccion" name="taller" value="B">
-                <label for="produccion">B. Sí, en producción/dirección.</label><br>
-                <input type="radio" id="guion" name="taller" value="C">
-                <label for="guion">C. Sí, en guion/escritura.</label><br>
-                <input type="radio" id="arte-cine" name="taller" value="D">
-                <label for="arte-cine">D. Sí, en dirección de arte/cinematografía.</label><br>
-                <input type="radio" id="notaller" name="taller" value="E">
-                <label for="notaller">E. No, gracias.</label><br>
-                
-                               <p>5. ¿Estarías interesado en apoyar proyectos de Marbella Films a través de crowdfunding o inversión?</p>
-                <input type="radio" id="si-definitivamente" name="apoyar" value="A">
-                <label for="si-definitivamente">A. Sí, definitivamente.</label><br>
-                <input type="radio" id="quizas" name="apoyar" value="B">
-                <label for="quizas">B. Quizás, necesito más información.</label><br>
-                <input type="radio" id="no-interesado" name="apoyar" value="C">
-                <label for="no-interesado">C. No, gracias.</label><br>
-
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
             </form>
         </section>
         <section id="conclusion">
             <h2>CONCLUSIÓN</h2>
-            <p>En Marbella Films, creemos que el cine es una poderosa herramienta para el cambio social y la educación. A través de nuestras producciones, buscamos tocar corazones y abrir mentes, fomentando un entendimiento más profundo de los temas que afectan a nuestra sociedad.</p>
-            <p>Agradecemos su interés y apoyo en nuestra misión. Juntos, podemos crear películas que no solo entretengan, sino que también inspiren y transformen.</p>
+            <p>Marbella Films se enorgullece en presentar una mirada íntima al arte del cine, donde cada fotograma cuenta una historia única y poderosa. A través de nuestra pasión por el cine, buscamos no solo entretener, sino también educar y enriquecer la experiencia humana. Agradecemos a todos nuestros espectadores por acompañarnos en este viaje cinematográfico, y esperamos seguir compartiendo historias que inspiren y transformen.</p>
         </section>
         <section id="agradecimientos">
             <h2>AGRADECIMIENTOS</h2>
-            <p>Agradecemos a todos los que han sido parte de Marbella Films, desde nuestro talentoso equipo hasta nuestros dedicados espectadores. Su pasión y apoyo hacen posible cada uno de nuestros proyectos.</p>
-            <p>Un agradecimiento especial a nuestros mentores, amigos y familiares que han brindado su apoyo incondicional en este viaje cinematográfico. Cada uno de ustedes es una parte invaluable de nuestra historia.</p>
+            <p>Agradecemos profundamente a todos los colaboradores, artistas, y personas que han hecho posible cada producción de Marbella Films. Sin su dedicación y talento, no podríamos llevar nuestras historias a la pantalla grande y al corazón del público. Agradecemos también a nuestros espectadores por su apoyo continuo y su entusiasmo por el cine que hacemos.</p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Marbella Films. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
