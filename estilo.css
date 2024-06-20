@@ -1,53 +1,87 @@
 body {
+    background-color: #A85F5D;
+    color: #000;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #8dbd8d; /* Verde pistache */
-    color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 20px;
+    background-color: #8B0000;
+    color: #FFF;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #871919;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #4d774d; /* Verde más oscuro */
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
+    color: #FFF;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
-    margin: 2em auto;
-    padding: 1em;
-    max-width: 800px;
-    background-color: white;
-    border: 1px solid #8dbd8d; /* Verde pistache */
-    border-radius: 10px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #4d774d; /* Verde más oscuro */
+    color: #871919;
+    text-transform: uppercase;
+    border-bottom: 2px solid #871919;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-footer {
-    background-color: #8dbd8d; /* Verde pistache */
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+p {
+    margin: 10px 0;
+}
+
+form p {
+    margin: 20px 0 10px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    background-color: #8B0000;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #871919;
 }
