@@ -1,6 +1,6 @@
 body {
-    background-color: #A85F5D;
-    color: #000;
+    background-color: #F5F5F5;
+    color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #8B0000;
+    background-color: #333;
     color: #FFF;
 }
 
@@ -23,7 +23,7 @@ h1 {
 }
 
 nav {
-    background-color: #871919;
+    background-color: #555;
 }
 
 nav ul {
@@ -54,9 +54,9 @@ section {
 }
 
 h2 {
-    color: #871919;
+    color: #555;
     text-transform: uppercase;
-    border-bottom: 2px solid #871919;
+    border-bottom: 2px solid #555;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -75,7 +75,7 @@ form label {
 }
 
 input[type="submit"] {
-    background-color: #8B0000;
+    background-color: #333;
     color: #FFF;
     border: none;
     padding: 10px 20px;
@@ -83,5 +83,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #871919;
+    background-color: #555;
 }
