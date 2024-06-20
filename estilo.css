@@ -1,16 +1,25 @@
-body {
-    background-color: #F5F5F5;
-    color: #333;
-    font-family: Arial, sans-serif;
+/* Reset general */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F6F2;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Encabezado */
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+    background-color: #2C3E50;
     color: #FFF;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header .logo {
@@ -18,70 +27,122 @@ header .logo {
     height: auto;
 }
 
-h1 {
+header h1 {
     margin: 10px 0;
+    font-size: 2.5rem;
 }
 
+/* Barra de navegación */
 nav {
-    background-color: #555;
+    background-color: #34495E;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin-right: 15px;
 }
 
 nav ul li a {
     color: #FFF;
     text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #2C3E50;
+    border-radius: 5px;
 }
 
+/* Contenido principal */
 main {
+    background-color: #EAEDED;
     padding: 20px;
 }
 
+/* Secciones */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: #555;
-    text-transform: uppercase;
-    border-bottom: 2px solid #555;
+section h2 {
+    color: #2C3E50;
+    font-size: 2rem;
+    border-bottom: 2px solid #2C3E50;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-p {
+section p {
     margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Formulario */
+form {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form p {
-    margin: 20px 0 10px;
+    margin-bottom: 15px;
 }
 
 form label {
     display: block;
-    margin: 5px 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-input[type="submit"] {
-    background-color: #333;
+form input[type="radio"], form input[type="submit"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #2C3E50;
     color: #FFF;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+form input[type="submit"]:hover {
+    background-color: #34495E;
+}
+
+/* Tipografía personalizada para títulos destacados */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    form {
+        font-size: 0.9rem;
+    }
 }
