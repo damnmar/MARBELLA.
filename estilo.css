@@ -30,6 +30,10 @@ header .logo {
 header h1 {
     margin: 10px 0;
     font-size: 2.5rem;
+    color: #C0C0C0; /* Color plateado */
+    background-color: #000; /* Fondo negro */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Barra de navegación */
@@ -73,11 +77,14 @@ section {
 }
 
 section h2 {
-    color: #2C3E50;
+    color: #C0C0C0; /* Color plateado */
     font-size: 2rem;
-    border-bottom: 2px solid #2C3E50;
-    padding-bottom: 5px;
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; /* Tipografía personalizada */
 }
 
 section p {
@@ -121,11 +128,6 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #34495E;
-}
-
-/* Tipografía personalizada para títulos destacados */
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* Media queries para hacer la página responsive */
