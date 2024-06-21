@@ -1,70 +1,150 @@
-/* nuevo-estilo.css */
-
-/* Estilos para el cuerpo del documento */
-body {
-    font-family: "Arial", sans-serif;
-    background-color: #F5F5F5;
-    color: #333;
+/* Reset general */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para el encabezado */
+/* Estilos del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F6F2;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Encabezado */
 header {
-    background-color: #333;
+    background-color: #2C3E50;
     color: #FFF;
-    padding: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+    color: #C0C0C0; /* Color plateado */
+    background-color: #000; /* Fondo negro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #34495E;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
     text-align: center;
 }
 
-/* Estilos para los enlaces en la barra de navegación */
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
 nav ul li a {
     color: #FFF;
     text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #2C3E50;
+    border-radius: 5px;
 }
 
-/* Estilos para las secciones */
-section {
-    margin-bottom: 20px;
+/* Contenido principal */
+main {
+    background-color: #EAEDED;
     padding: 20px;
-    background-color: #FFF;
-    border: 1px solid #DDD;
 }
 
-h2 {
-    color: #555;
+/* Secciones */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #C0C0C0; /* Color plateado */
+    font-size: 2rem;
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    border-bottom: 2px solid #555;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif; /* Tipografía personalizada */
 }
 
-p {
+section p {
     margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-/* Estilos para el formulario */
+/* Formulario */
 form {
-    margin-top: 20px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form p {
+    margin-bottom: 15px;
 }
 
 form label {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-input[type="submit"] {
-    background-color: #333;
+form input[type="radio"], form input[type="submit"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #2C3E50;
     color: #FFF;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+form input[type="submit"]:hover {
+    background-color: #34495E;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    form {
+        font-size: 0.9rem;
+    }
 }
